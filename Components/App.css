@@ -1,0 +1,61 @@
+/* App.css */
+body {
+  background: linear-gradient(180deg, #b7a944, #3d8bd8);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column; /* Stack header and
+  
+  main content vertically */
+  border-radius: 20px;
+  height: 100vh; /* Full viewport height */
+}
+
+.headerContainer {
+  padding: 15px;
+  background: #fcde73; /* Solid color */
+  border: 2px solid #dad39e; /* Border */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  font-size: 23px;
+  
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row; /* Align children in a row */
+  flex-grow: 1; /* Allow to grow to fill available space */
+}
+
+.sidebarContainer {
+  width: 250px; /* Fixed width for the sidebar */
+  background-color: #343a40; /* Optional: background color for sidebar */
+  color: white; /* Text color */
+  
+}
+
+.contentArea {
+  flex-grow: 1; /* Allow content area to take remaining space */
+  margin: 40px;
+  padding: 20px; /* Add some padding */
+  background-color: #f8e7aa; /* Light 
+  background for content */
+
+  background:linear-gradient(190deg , #ffa381, #3d8bd8 );
+  border-radius: 24px;
+  min-height: calc(100vh - 100px); /* Adjust for header height */
+}
+
+.topicContent {
+  margin-top: 50px;
+  
+  /* Add more styling as needed */
+}

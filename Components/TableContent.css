@@ -1,0 +1,67 @@
+.sidebarContainer {
+  max-width: 350px; /* Increased width for the sidebar */
+  width: 400px; /* Keep this for maximum width */
+  margin-top: 50px;
+  height: 100vh; /* Full height for the sidebar */
+  background-color: #212529; /* Darker background for a sleek look */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for better depth */
+  overflow-y: auto; /* Makes sidebar scrollable */
+}
+
+.sidebarContainer .nav-link {
+  font-size: 28px; /* Increased font size for better readability */
+  font-weight: 500;
+  color: #ffffff;
+  padding: 12px 15px; /* More padding for larger click area */
+  border-radius: 8px;
+  margin: 10px 0; /* Increased margin for better spacing */
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebarContainer .nav-link.active {
+  background-color: #ffca28; /* Brighter yellow for active state */
+  color: #212529;
+}
+
+.sidebarContainer .nav-link:hover {
+  background-color: #ffc107; /* Change hover color */
+  color: #212529; /* Text color on hover */
+}
+
+.sidebarContainer .nav-link svg {
+  margin-right: 15px; /* Increased space between icon and text */
+}
+
+.sidebarContainer hr {
+  border: 1px solid #495057;
+  margin: 20px 0; /* Added spacing around the hr */
+}
+
+.sidebarContainer .fs-4 {
+  font-size: 22px;
+  margin-left: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px; /* Spacing between title and links */
+}
+
+/* Adjust the container on smaller screens */
+@media (max-width: 768px) {
+  .sidebarContainer {
+    max-width: 200px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .sidebarContainer .nav-link {
+    font-size: 16px;
+  }
+
+  .sidebarContainer .fs-4 {
+    font-size: 20px;
+  }
+}
