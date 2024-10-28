@@ -10,6 +10,7 @@
   overflow-y: auto; /* Makes sidebar scrollable */
 }
 
+
 .sidebarContainer .nav-link {
   font-size: 28px; /* Increased font size for better readability */
   font-weight: 500;
@@ -64,4 +65,56 @@
   .sidebarContainer .fs-4 {
     font-size: 20px;
   }
+}
+
+
+.topicContent{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  
+}
+.description{
+  margin: 10px;
+  font-size: 30px;
+  margin: 10px;
+  color: #000000;
+}
+
+.Heading{
+  font-size: 90px;
+background-color: aqua;
+padding: 10px;
+border-radius: 15px;
+border: 2px solid #ebe8dd; /* Border */
+box-shadow: 10px 10px 10px 1px rgba(241, 85, 18, 0.3);
+margin-left: 40%;
+margin-bottom: 40px;
+border-bottom: 5px solid black;
+
+/* display: inline-block; it make the box resize as per the selectedTopic element */
+display:inline-block;
+  
+}
+.logo{
+  margin-left:80px ;
+margin-inline-end: 15px;
+}
+
+.features{
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
+}
+.advantage{
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
+}
+.Links{
+  font-size: 35px;
+  font-weight: bold;
+  margin: 15px;
+  padding: 10px;
+ 
 }

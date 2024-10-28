@@ -1,0 +1,94 @@
+const data = {
+  "React Native": {
+    description:
+      "React Native is a popular framework for building mobile apps using JavaScript and React.",
+    features: [
+      "Cross-platform support",
+      "Hot reloading",
+      "Rich ecosystem of libraries",
+    ],
+    pros: ["Fast development", "Strong community support", "Reusable code"],
+    cons: ["Limited native module support", "Performance limitations"],
+    documentationLink: "https://reactnative.dev/docs/getting-started",
+    roadmapLink:
+      "https://github.com/reactwg/react-native-new-architecture/discussions/120",
+  },
+  "React JS": {
+    description:
+      "React JS is a front-end library used for building user interfaces in web applications.",
+    features: [
+      "Virtual DOM",
+      "Component-based architecture",
+      "One-way data binding",
+    ],
+    pros: ["Highly flexible", "Good community support", "SEO-friendly"],
+    cons: ["High pace of development", "Poor documentation for some libraries"],
+    documentationLink: "https://reactjs.org/docs/getting-started.html",
+    roadmapLink: "https://github.com/reactjs/reactjs.org/issues/3309",
+  },
+  "Express JS": {
+    description:
+      "Express is a minimal and flexible Node.js web application framework.",
+    features: ["Minimalist framework", "Robust routing", "Middleware support"],
+    pros: [
+      "Highly flexible",
+      "Lightweight",
+      "Full control over request handling",
+    ],
+    cons: [
+      "Requires more setup",
+      "Not opinionated (may be complex for beginners)",
+    ],
+    documentationLink: "https://expressjs.com/en/starter/installing.html",
+    roadmapLink: "https://roadmap.sh/backend",
+  },
+  "Node JS": {
+    description:
+      "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+    features: [
+      "Event-driven architecture",
+      "Non-blocking I/O",
+      "Single-threaded but highly scalable",
+    ],
+    pros: [
+      "High performance",
+      "Vast ecosystem",
+      "Single language for full stack",
+    ],
+    cons: ["Single-thread limitations", "Callback hell"],
+    documentationLink: "https://nodejs.org/en/docs/",
+    roadmapLink: "https://github.com/nodejs/node/blob/main/ROADMAP.md",
+  },
+  Kotlin: {
+    description:
+      "Kotlin is a modern, statically typed programming language for JVM and Android development.",
+    features: [
+      "Concise syntax",
+      "Interoperable with Java",
+      "Coroutines support",
+    ],
+    pros: [
+      "Less code, fewer bugs",
+      "Multiplatform capabilities",
+      "Modern syntax",
+    ],
+    cons: ["Small community", "Relatively new"],
+    documentationLink: "https://kotlinlang.org/docs/home.html",
+    roadmapLink: "https://kotlinlang.org/docs/roadmap.html",
+  },
+  Flutter: {
+    description:
+      "Flutter is an open-source UI software development kit created by Google for building natively compiled applications.",
+    features: [
+      "Single codebase for multiple platforms",
+      "Hot reload",
+      "High-performance rendering engine",
+    ],
+    pros: ["High productivity", "Beautiful UIs", "Growing community"],
+    cons: ["Large app sizes", "Limited library support"],
+    documentationLink: "https://flutter.dev/docs",
+    roadmapLink: "https://github.com/flutter/flutter/wiki/Roadmap",
+  },
+};
+
+export default data;

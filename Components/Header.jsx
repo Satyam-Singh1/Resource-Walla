@@ -25,22 +25,17 @@ const Header = () => {
             </li>
             <li>
               <a href="#" className="nav-link text-white px-2">
-                Features
+                Resources
               </a>
             </li>
             <li>
               <a href="#" className="nav-link text-white px-2">
-                Pricing
+                About us
               </a>
             </li>
             <li>
               <a href="#" className="nav-link text-white px-2">
-                FAQs
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-link text-white px-2">
-                About
+                Contact us
               </a>
             </li>
           </ul>

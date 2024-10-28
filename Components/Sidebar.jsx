@@ -1,109 +1,3 @@
-// import "./TableContent.css";
-
-// function Sidebar() {
-//   return (
-//     <>
-//       <div className="sidebarContainer">
-//         <div
-//           className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
-//           style={{ width: "80px" }}
-//         >
-//           <a
-//             href="/"
-//             className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
-//           >
-//             <svg className="bi pe-none me-2" width="50" height="92">
-//               <use xlinkHref="#bootstrap"></use>
-//             </svg>
-//             <span className="fs-4">Table of Content</span>
-//           </a>
-//           <hr />
-//           <ul className="nav nav-pills flex-column mb-auto">
-//             <li className="nav-item">
-//               <a
-//                 href="#"
-//                 className="nav-link active courses"
-//                 aria-current="page"
-//               >
-//                 <svg
-//                   className="bi pe-none me-2 courseContainer"
-//                   width="16"
-//                   height="76"
-//                 >
-//                   <use xlinkHref="#home"></use>
-//                 </svg>
-//                 React Native
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#" className="nav-link text-white courses">
-//                 <svg
-//                   className="bi pe-none me-2 courseContainer"
-//                   width="16"
-//                   height="16"
-//                 >
-//                   <use xlinkHref="#speedometer2"></use>
-//                 </svg>
-//                 React js
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#" className="nav-link text-white courses">
-//                 <svg
-//                   className="bi pe-none me-2 courseContainer"
-//                   width="16"
-//                   height="16"
-//                 >
-//                   <use xlinkHref="#table"></use>
-//                 </svg>
-//                 Express Js
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#" className="nav-link text-white courses">
-//                 <svg
-//                   className="bi pe-none me-2 courseContainer"
-//                   width="16"
-//                   height="16"
-//                 >
-//                   <use xlinkHref="#grid"></use>
-//                 </svg>
-//                 Node js
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#" className="nav-link text-white courses">
-//                 <svg
-//                   className="bi pe-none me-2 courseContainer"
-//                   width="16"
-//                   height="16"
-//                 >
-//                   <use xlinkHref="#people-circle"></use>
-//                 </svg>
-//                 Kotlin
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#" className="nav-link text-white courses">
-//                 <svg
-//                   className="bi pe-none me-2 courseContainer"
-//                   width="16"
-//                   height="16"
-//                 >
-//                   <use xlinkHref="#speedometer2"></use>
-//                 </svg>
-//                 Flutter
-//               </a>
-//             </li>
-//           </ul>
-//           <hr />
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default Sidebar;
 import "./TableContent.css";
 
 function Sidebar({ setSelectedTopic }) {
@@ -120,7 +14,7 @@ function Sidebar({ setSelectedTopic }) {
     <div className="sidebarContainer">
       <div
         className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
-        style={{ width: "250px" }}
+        style={{ width: "350px" }}
       >
         <a
           href="/"
