@@ -1,16 +1,20 @@
 .sidebarContainer {
-  max-width: 350px; /* Increased width for the sidebar */
-  width: 400px; /* Keep this for maximum width */
-  margin-top: 50px;
+  max-width: 650px; /* Increased width for the sidebar */
+  width: 500px; /* Keep this for maximum- width */
+  margin: 10px;
   height: 100vh; /* Full height for the sidebar */
   background-color: #212529; /* Darker background for a sleek look */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for better depth */
   overflow-y: auto; /* Makes sidebar scrollable */
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  position: fixed;
+
+ 
 }
-
-
 .sidebarContainer .nav-link {
   font-size: 28px; /* Increased font size for better readability */
   font-weight: 500;
@@ -20,17 +24,23 @@
   margin: 10px 0; /* Increased margin for better spacing */
   display: flex;
   align-items: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+ transition-delay: 0ms;
 }
 
 .sidebarContainer .nav-link.active {
   background-color: #ffca28; /* Brighter yellow for active state */
   color: #212529;
+ 
 }
 
 .sidebarContainer .nav-link:hover {
   background-color: #ffc107; /* Change hover color */
-  color: #212529; /* Text color on hover */
+  color: #55e555; /* Text color on hover */
+  font-size: 38px;
+  
 }
 
 .sidebarContainer .nav-link svg {
@@ -94,7 +104,13 @@ border-bottom: 5px solid black;
 
 /* display: inline-block; it make the box resize as per the selectedTopic element */
 display:inline-block;
+transition: all 0.4s ease-in-out 0ms;
   
+}
+.Heading:hover{
+  font-size: 110px;
+  font-weight: bold;
+  background-color: yellow;
 }
 .logo{
   margin-left:80px ;
@@ -117,4 +133,4 @@ margin-inline-end: 15px;
   margin: 15px;
   padding: 10px;
  
-}
+}                                       

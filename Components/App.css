@@ -1,4 +1,12 @@
 /* App.css */
+
+.appName {
+  font-size: 2rem; /* Adjust font size as desired */
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0; /* Adds space above and below the name */
+}
+
 body {
   background: linear-gradient(180deg, #b7a944, #3d8bd8);
   margin: 0;
@@ -15,14 +23,14 @@ body {
   height: 100vh; /* Full viewport height */
 }
 
-.headerContainer {
+.Header {
   padding: 15px;
   background: #fcde73; /* Solid color */
   border: 2px solid #dad39e; /* Border */
   box-shadow: 0px 14px 25px rgba(216, 24, 24, 0.1);
   border-radius: 30px;
-  font-size: 23px;
-  
+  font-size: 30px;
+  position:relative;
   
 }
 
@@ -47,6 +55,7 @@ body {
 .contentArea {
   flex-grow: 1; /* Allow content area to take remaining space */
   margin: 100px;
+  margin-left: 412px;
   padding: 100px; /* Add some padding */
   background-color: #f8e7aa; /* Light 
   background for content */
