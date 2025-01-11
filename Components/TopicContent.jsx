@@ -1,7 +1,7 @@
 // TopicContent.jsx
 import React from "react";
 import "./App.css";
-import yt from "../data/assests/ytlogo.jpg";
+import document from "../src/assets/images.jpeg";
 import roadmap from "../data/assests/roadmap.png";
 import "./TableContent.css";
 const TopicContent = ({ selectedTopic, content }) => {
@@ -10,16 +10,13 @@ const TopicContent = ({ selectedTopic, content }) => {
     <>
       <div className="topicContent">
         <h1 className="Heading">{selectedTopic}</h1>
-        <div className="logo">
-          <img src="../../data/assets/reactjs.jpg" alt="Logo" />
-        </div>
       </div>
 
       <div className="description">
         <p className="glowingText">{content.description}</p>
       </div>
       <div className="features">
-        <h1>Key features</h1>
+        <h1 className="subheading">Key features</h1>
         <ul>
           {content.features.map((feature, index) => (
             <li key={index}>{feature}</li>
@@ -33,37 +30,51 @@ const TopicContent = ({ selectedTopic, content }) => {
             <li key={index}>{adv}</li>
           ))}
         </ul>
-      </div>
-      <div className="Links">
+      </div> <div className="useCase">
+        <h1>Use Cases</h1>
         <ul>
-          {" "}
-          <h1>Resources</h1>
-          <li>
-            <img src={yt} alt="YouTube Logo" className="ytlogo" />
-            <a href={content.documentationLink} target="_blank">
-              Official Documentation
-            </a>
-          </li>
-          <li>
-            <img src={roadmap} alt="roadmap" className="ytlogo" />
-            <a href={content.roadmapLink} target="_blank">
-              Roadmap
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className="useCase">
-        <h1>UseCases</h1>
-        <ul>
-          {content.useCase ? (
-            content.useCase.map((usecase, index) => (
+          
+           { content.useCases.map((usecase, index) => (
               <li key={index}>{usecase}</li>
-            ))
-          ) : (
-            <p>No use cases available.</p>
-          )}
+            ))}
+          
         </ul>
       </div>
+
+      <div className="Links">
+  <h1>Resources</h1>
+  <div className="resourceContainer">
+    <div className="logoLink">
+      <img src={roadmap} alt="YouTube Logo" className="ytlogo" />
+      <a href={content.documentationLink} target="_blank" rel="noopener noreferrer">
+        Official Documentation
+      </a>
+    </div>
+    <div className="logoLink">
+      <img src={document} alt="roadmap" className="ytlogo" />
+      <a href={content.roadmapLink} target="_blank" rel="noopener noreferrer">
+        Roadmap
+      </a>
+    </div>
+  </div>
+</div>
+
+     
+      <div className="Links">
+        <h1>Community Resources</h1 >
+        <ul>
+          {content.communityResources
+            ? content.communityResources.map((resource, index) => (
+                <li key={index}>
+                  <a href={resource.link} target="_blank" rel="noopener noreferrer">
+                    {resource.title} ({resource.type})
+                  </a>
+                </li>
+              ))
+            : "No community resources available."}
+        </ul>
+      </div>
+
     </>
   );
 };

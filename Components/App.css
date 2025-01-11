@@ -1,4 +1,7 @@
 /* App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .appName {
   height: 70px;
@@ -11,19 +14,14 @@
   border-radius: 15px;
  
 }
-.p-4 {
-  padding: 1.5rem !important;
-  margin: 10px;
-  margin-top: 10px;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+
 body {
   /* background: url("../data/assests/background3.jpeg"); */
   background: url("../data/assests/mainPageBackground.mp4");
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  
   min-height: 100vh;
 }
 
@@ -36,27 +34,32 @@ body {
 }
 
 .Header {
-  padding: 15px;
+  padding: 10px 15px; /* Reduced padding to decrease the height */
   background: #fcde73; /* Solid color */
   border: 2px solid #dad39e; /* Border */
-  box-shadow: 0px 14px 25px rgba(216, 24, 24, 0.1);
+
   border-radius: 30px;
-  font-size: 35px;
-  position:relative;
-  
-}
-.Header .nav {
-  gap: 20px; /* Adds space between navigation links */
+  font-size: 28px; /* Reduced font size for a more compact header */
+  position: relative;
 }
 
-.Header .text-end button {
-  margin-left: 10px; /* Adds spacing between Login and Sign-up buttons */
+.p-4 {
+  margin:5px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
-.Header .form-control {
-  margin-right: 15px; /* Adds spacing between the search bar and other elements */
+.nav-item{
+   margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #343a40;
 }
-
+.nav-item:hover{
+  color: #9ec3e9;
+transform: scale(1.1);
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
 
 /* Parent container should use Flexbox */
 .d-flex {
@@ -69,31 +72,15 @@ body {
   flex-direction: row; /* Align children in a row */
   flex-grow: 1; /* Allow to grow to fill available space */
 }
-
-.sidebarContainer {
-  min-width: 230px;
-  width: 280px; /* Fixed width for the sidebar */
-  background-color: #343a40; /* Sidebar background color */
-  color: white; /* Text color */
-  height: calc(100vh - 70px); /* Full height minus header */
-  overflow-y: auto; /* Add scrolling if content overflows */
-  position: sticky; /* Keeps the sidebar fixed during scroll */
-  top: 70px; /* Match the height of the header */
-}
-.sidebarContainer .nav-link {
-  font-size: 22px;}
-
   .contentArea {
-    flex-grow: 1; /* Takes up remaining space */
-    padding: 20px; /* Add some padding for better spacing */
+    padding: 20px;
     margin: 20px;
-    background-color: rgb(237, 203, 123); /* Background color */
+    color: white;
+    
     border-radius: 24px;
-    min-height: calc(100vh - 70px); /* Match the sidebar height */
-    margin-left: 0; /* Aligns content directly next to the sidebar */
-    opacity: 0.3; /* Semi-transparent for style */
-    z-index: 1; /* Ensures it appears above the video */
-    overflow-y: auto; /* Add scrolling if content exceeds viewport */
+    
+    z-index: 1; 
+    /* overflow-y: auto;  */
   }
 .topicContent {
   margin-top: 50px;
@@ -118,6 +105,6 @@ margin:8px;
   height: 100%;
   object-fit: cover; /* Ensures the video covers the entire viewport */
   z-index: -1; /* Places the video behind other elements */
-  filter: brightness(0.7); /* Optional: Darken video for better content readability */
+  filter: brightness(0.9); /* Optional: Darken video for better content readability */
 }
 /* Glowing Text with Outline */

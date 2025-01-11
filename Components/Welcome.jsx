@@ -14,7 +14,7 @@ export default function Welcome() {
         <source src={video4} type="video/mp4" />
       </video>
       <div className="WelcomeContainer">
-        <h1>Welcome To Resource Wallah</h1>
+        <h1>Welcome To Resource Walla</h1>
       </div>
       <div className="IntroContainer">
         <p>

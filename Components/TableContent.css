@@ -1,80 +1,4 @@
-.sidebarContainer {
-  max-width: 650px; /* Increased width for the sidebar */
-  width: 500px; /* Keep this for maximum- width */
-  margin: 10px;
-  height: 100vh; /* Full height for the sidebar */
-  background-color: #212529; /* Darker background for a sleek look */
 
-  border-radius: 10px;
-  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for better depth */
-  overflow-y: auto; /* Makes sidebar scrollable */
-  display: flex;
-  flex-direction: row;
-  align-content: space-evenly;
-  position: fixed;
-
- 
-}
-.sidebarContainer .nav-link {
-  font-size: 28px; /* Increased font size for better readability */
-  font-weight: 500;
-  color: #ffffff;
-  padding: 12px 15px; /* More padding for larger click area */
-  border-radius: 8px;
-  margin: 10px 0; /* Increased margin for better spacing */
-  display: flex;
-  align-items: center;
-  transition-property: all;
-  transition-duration: 0.6s;
-  transition-timing-function: ease-in-out;
- transition-delay: 0ms;
-}
-
-.sidebarContainer .nav-link.active {
-  background-color: #ffca28; /* Brighter yellow for active state */
-  color: #212529;
- 
-}
-
-.sidebarContainer .nav-link:hover {
-  background-color: #ffc107; /* Change hover color */
-  color: #55e555; /* Text color on hover */
-  font-size: 28px;
-  
-}
-
-.sidebarContainer .nav-link svg {
-  margin-right: 15px; /* Increased space between icon and text */
-}
-
-.sidebarContainer hr {
-  border: 1px solid #495057;
-  margin: 20px 0; /* Added spacing around the hr */
-}
-
-.sidebarContainer .fs-4 {
-  font-size: 22px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 20px; /* Spacing between title and links */
-}
-
-/* Adjust the container on smaller screens */
-@media (max-width: 768px) {
-  .sidebarContainer {
-    max-width: 200px;
-    height: auto;
-    padding: 15px;
-  }
-
-  .sidebarContainer .fs-4 {
-    font-size: 20px;
-  }
-}
-
-.mb-3 {
-  margin-bottom: 0px;
-}
 .topicContent{
   display: flex;
   align-items: center;
@@ -82,55 +6,166 @@
   
 }
 .description{
+  border-radius: 25px;
+   backdrop-filter: blur(30px);
+   box-shadow: #49c3ec 0px 0px 30px;
+  padding: 33px;
   margin: 10px;
   font-size: 30px;
-  margin: 10px;
-  color: #000000;
+  margin:20px 60px;
+  color: #fbf6f6;
       font-weight: 500;
+     
 }
 
 .Heading{
-  color: #000000;
+  color:#f2f2f2;
   font-size: 39px;
-background-color: aqua;
 padding: 10px;
 border-radius: 15px;
-border: 2px solid #ebe8dd; /* Border */
-box-shadow: 10px 10px 10px 1px rgba(241, 85, 18, 0.3);
-margin-left: 1%;
-margin-bottom: 40px;
+backdrop-filter:blur(30px);
+box-shadow: #c0dce6 0px 0px 30px;
+margin-bottom: 30px;
 border-bottom: 5px solid black;
-/* display: inline-block; it make the box resize as per the selectedTopic element */
 display:inline-block;
 transition: all 0.2s ease-in-out 0ms;
   
 }
 .Heading:hover{
-  font-size: 45px;
-  font-weight: bold;
-  background-color: yellow; 
+ scale:1.1;
+ color:#daf8af;
+ box-shadow: #B0ADFF 0px 0px 30px;
 }
 .logo{
   margin-left:80px ;
 margin-inline-end: 15px;
 }
 
-.features{
-  font-size: 25px;
+.subheading{
+  text-align: center;
   margin: 10px;
-  padding: 10px;
-  color: #000000;
+}
+
+.features{
+  text-align: center ;
+  font-size: 25px;
+  margin:20px 60px;
+  padding: 30px;
+  color: #ffffff;
+  border:2px solid ;
+  border-radius: 25px;
+   backdrop-filter: blur(30px);
+   box-shadow: #49c3ec 0px 0px 20px;
+
 }
 .advantage{
+  text-align: center ;
   font-size: 25px;
-  margin: 10px;
-  padding: 10px;
-  color: #000000;
+  margin:20px 60px;
+  padding: 30px;
+  color: #f3e9e9;
+  border:2px solid ;
+  border-radius: 25px;
+   backdrop-filter: blur(30px);
+   box-shadow: #49c3ec 0px 0px 20px;
+
 }
-.Links{
-  font-size: 35px;
+.useCase{
+  text-align: center ;
+  font-size: 25px;
+  margin:20px 60px;
+  padding: 30px;
+  color: #f3e9e9;
+  border:2px solid ;
+  border-radius: 25px;
+   backdrop-filter: blur(30px);
+   box-shadow: #49c3ec 0px 0px 20px;
+ 
+ 
+}
+.features, .advantage ,.description , .useCase ,.Links{
+  line-height: 3.6rem;
+}
+.resourceContainer {
+  display: flex;
+  flex-direction: column; 
+  
+}
+.logoLink{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+}
+.logoLink img{
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.Links {
+  font-size: 25px;
   font-weight: bold;
-  margin: 15px;
-  padding: 10px;
+  margin: 20px 60px;
+  padding: 8px;
+  color: #f3f3f3;
+  border: 2px solid;
+  border-radius: 25px;
+  backdrop-filter: blur(30px);
+  box-shadow: #49c3ec 0px 0px 20px;
+  padding: 30px;
+}
+
+.Links h1 {
+  text-align: center;
+}
+
+
+.navbarContainer {
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Keep the navbar at the top */
+  width: 100%; /* Ensure the navbar spans the full width */
+  z-index: 9999; /* Ensure it stays above other content */
+  background-color: #fff; /* Set a background color to prevent overlap */
+  border-bottom: 2px solid #ccc; /* Optional: add a bottom border */
+}
+
+
+.topicContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0; /* Removed margin to ensure no spacing at the top and bottom */
+  list-style: none;
+  padding: 0; /* Removed padding for top and bottom */
+  width: 100%;
+  align-items: center; /* Centers the links vertically */
+  background:linear-gradient(to right , white,grey)
+  
+
+}
+
+.topicLinks {
+  text-decoration: none;
+  padding: 0; /* Removed padding */
   color: #000000;
-}                                       
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin: 0 10px; /* Adjusted margin between items */
+}
+.topicLinks:hover {
+  color: #ffffff;
+  background-color: #212529;
+  border-radius: 8px;
+  padding: 10px 15px; /* Adjusted padding for better click area */
+  transition: all 0.3s ease-in-out 0ms;
+}
+.nav-arrow {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+}
+
+.nav-arrow:hover {
+  transform: scale(1.2);
+}

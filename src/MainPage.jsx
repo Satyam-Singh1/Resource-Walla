@@ -1,28 +1,30 @@
 import React, { useState } from "react";
-import Sidebar from "../Components/Sidebar";
-import Header from "../Components/Headers";
+
 import TopicContent from "../Components/TopicContent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Components/App.css";
 import data from "../data/topicContent";
-import videoMain from "../data/assests/mainPageBackground.mp4";
-import video3 from "../data/assests/video3.mp4";
+import bg3 from "../data/assests/bg3.mp4";
+import Navbar from "../Components/Navbar";
+import Header2 from "../Components/Header2";
 export default function MainPage() {
   const [selectedTopic, setSelectedTopic] = useState("React Native");
 
-  console.log(data[selectedTopic]); // Debugging line
+
 
   return (
     <div className="mainPageContainer">
       <video autoPlay loop muted playsInline className="backgroundVideo">
-        <source src={video3} type="video/mp4" />
+        <source src={bg3} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="appContainer">
-        <div className="appName">Resource Walla</div>
-        <Header />
+        {/* <div className="appName">Resource Walla</div> */}
+        {/* <Header /> */}
+        <Header2 />
+        <Navbar setSelectedTopic={setSelectedTopic} />
         <div className="d-flex flex-row" style={{ flexGrow: 1 }}>
-          <Sidebar setSelectedTopic={setSelectedTopic} />
+          {/* <Sidebar setSelectedTopic={setSelectedTopic} /> */}
           <div className="contentArea">
             <TopicContent
               selectedTopic={selectedTopic}
