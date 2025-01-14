@@ -9,9 +9,6 @@ import Navbar from "../Components/Navbar";
 import Header2 from "../Components/Header2";
 export default function MainPage() {
   const [selectedTopic, setSelectedTopic] = useState("React Native");
-
-
-
   return (
     <div className="mainPageContainer">
       <video autoPlay loop muted playsInline className="backgroundVideo">
@@ -19,12 +16,9 @@ export default function MainPage() {
         Your browser does not support the video tag.
       </video>
       <div className="appContainer">
-        {/* <div className="appName">Resource Walla</div> */}
-        {/* <Header /> */}
         <Header2 />
         <Navbar setSelectedTopic={setSelectedTopic} />
         <div className="d-flex flex-row" style={{ flexGrow: 1 }}>
-          {/* <Sidebar setSelectedTopic={setSelectedTopic} /> */}
           <div className="contentArea">
             <TopicContent
               selectedTopic={selectedTopic}

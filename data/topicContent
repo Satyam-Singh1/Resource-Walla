@@ -792,7 +792,84 @@ const data = {
     "Use relative URLs for easier migration and maintenance of projects",
     "Test your HTML across multiple browsers for compatibility"
   ]
-}
+},
+"Node JS": {
+  "description":
+    "Node.js is a powerful JavaScript runtime built on Chrome's V8 engine, designed to execute JavaScript code server-side. It enables developers to build scalable and high-performance network applications with an event-driven, non-blocking I/O model.",
+  "features": [
+    "Event-driven and non-blocking I/O for high performance",
+    "Built-in support for creating web servers",
+    "Cross-platform compatibility (Windows, macOS, Linux)",
+    "NPM (Node Package Manager) for managing dependencies",
+    "Support for real-time applications using WebSockets",
+    "Ability to execute JavaScript on the server-side",
+    "Extensive library of built-in modules for common tasks",
+    "Support for microservices and serverless architectures",
+    "Seamless integration with front-end frameworks like React or Angular",
+    "Highly scalable for I/O-heavy applications"
+  ],
+  "pros": [
+    "Fast execution with the V8 engine",
+    "Highly scalable due to event-driven architecture",
+    "Unified language for front-end and back-end (JavaScript)",
+    "Large ecosystem of libraries via NPM",
+    "Good for real-time applications like chat or live streaming",
+    "Active open-source community providing robust support",
+    "Lightweight and efficient for microservices architecture"
+  ],
+  "cons": [
+    "Single-threaded nature may cause performance issues for CPU-intensive tasks",
+    "Callback hell in complex scenarios (mitigated with async/await)",
+    "Relatively new compared to traditional server-side technologies",
+    "Less suited for applications requiring heavy computation",
+    "Can lead to memory leaks if not managed properly"
+  ],
+  "useCases": [
+    "Building RESTful APIs and microservices",
+    "Real-time applications like chat apps and collaborative tools",
+    "Single-page application (SPA) backends",
+    "Streaming services for audio or video content",
+    "Command-line tools and utilities",
+    "Serverless architecture using AWS Lambda or Google Cloud Functions",
+    "Proxy servers to handle multiple service requests"
+  ],
+  "documentationLink": "https://nodejs.org/en/docs/",
+  "roadmapLink": "https://github.com/nodejs/node",
+  "communityResources": [
+    {
+      "type": "Forums",
+      "title": "Node.js Discussion Board",
+      "link": "https://github.com/nodejs/help"
+    },
+    {
+      "type": "GitHub",
+      "title": "Node.js GitHub Repository",
+      "link": "https://github.com/nodejs/node"
+    },
+    {
+      "type": "Stack Overflow",
+      "title": "Node.js Q&A",
+      "link": "https://stackoverflow.com/questions/tagged/node.js"
+    },
+    {
+      "type": "Reddit",
+      "title": "Node.js Subreddit",
+      "link": "https://www.reddit.com/r/node/"
+    }
+  ],
+  "bestPractices": [
+    "Use asynchronous programming patterns to avoid blocking",
+    "Leverage environment variables for configuration management",
+    "Validate user inputs to prevent security vulnerabilities",
+    "Use clustering to scale Node.js applications on multi-core systems",
+    "Monitor performance using tools like PM2 or New Relic",
+    "Follow modular design principles to keep code maintainable",
+    "Implement proper error handling using try-catch blocks and middleware",
+    "Secure applications with libraries like Helmet and rate-limiting",
+    "Write unit and integration tests with tools like Mocha or Jest"
+  ]
+},
+
 
 
 

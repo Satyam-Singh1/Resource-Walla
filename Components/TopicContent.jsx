@@ -4,8 +4,9 @@ import "./App.css";
 import document from "../src/assets/images.jpeg";
 import roadmap from "../data/assests/roadmap.png";
 import "./TableContent.css";
+import Footer from "./Footer";
 const TopicContent = ({ selectedTopic, content }) => {
-  //const src = content.imageURL;
+ 
   return (
     <>
       <div className="topicContent">
@@ -74,7 +75,7 @@ const TopicContent = ({ selectedTopic, content }) => {
             : "No community resources available."}
         </ul>
       </div>
-
+<Footer/>
     </>
   );
 };

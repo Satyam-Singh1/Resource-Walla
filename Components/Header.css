@@ -44,9 +44,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  padding:5px;
 
+  padding:5px;
   height: 75px;
   backdrop-filter: blur(30px);
   box-shadow: rgba(227, 228, 237, 0.37) 0px 0px 30px;

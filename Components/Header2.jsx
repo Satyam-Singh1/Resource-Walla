@@ -20,7 +20,7 @@ export default function Header2() {
         <li className="items">
           <a href="/ContactUs">Contact Us</a>
         </li>
-        <li className="items">FAQs</li>
+        <li className="items"><a href="#">FAQs</a></li>
       </ul>
       <div className="buttonContainer">
         <button className="login">Login</button>

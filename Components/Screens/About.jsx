@@ -1,9 +1,10 @@
 import React from "react";
 import "./Contact2.css";
 import Header2 from "../Header2";
-import hero2 from "../../src/assets/heroImage2.jpg"
+
 import { useNavigate } from "react-router-dom";
 import profileImage from "../../src/assets/heroImage.png";
+import Footer from "../Footer";
 export default function About() {
   const navigate = useNavigate();
   function handleTalk() {
@@ -23,19 +24,21 @@ export default function About() {
         
         <div className="content-container">
           <div className="image">
-            <img src={hero2} alt="profile" />
+            <img src={profileImage} alt="profile" />
           </div>  
           <div className="about-description">
           <h5>Developer<span> & Designer</span></h5>
             <p>
             I am a front-end web and mobile app developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.
-            I can also make the website more & more interactive with web animations.
+           .My goal is to enhance the interactivity of 
+            websites through dynamic web animations, ensuring an intuitive and captivating experience for users. 
+            With a focus on detail and a commitment to delivering high-quality results,
             </p>
             <button className="btn" onClick={handleTalk}>Let's Talk</button>
           </div>
         </div>
       </div>
-    
+    <Footer/>
     </>
   );
 }

@@ -118,46 +118,40 @@ margin-inline-end: 15px;
 .Links h1 {
   text-align: center;
 }
-
-
 .navbarContainer {
-  position: sticky; /* Make the navbar sticky */
-  top: 0; /* Keep the navbar at the top */
-  width: 100%; /* Ensure the navbar spans the full width */
-  z-index: 9999; /* Ensure it stays above other content */
-  background-color: #fff; /* Set a background color to prevent overlap */
-  border-bottom: 2px solid #ccc; /* Optional: add a bottom border */
+  position: sticky; 
+  top: 0; 
+  width: 100%; 
+  z-index: 9999; 
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
 }
-
-
 .topicContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 0; /* Removed margin to ensure no spacing at the top and bottom */
+  margin: 0; 
   list-style: none;
-  padding: 0; /* Removed padding for top and bottom */
+  padding: 0;
   width: 100%;
-  align-items: center; /* Centers the links vertically */
-  background:linear-gradient(to right , white,grey)
-  
-
+  align-items: center; 
+  background:linear-gradient(to right , white,grey);
 }
 
 .topicLinks {
   text-decoration: none;
-  padding: 0; /* Removed padding */
+  padding: 0; 
   color: #000000;
   font-size: 25px;
   font-weight: 500;
   border-radius: 8px;
-  margin: 0 10px; /* Adjusted margin between items */
+  margin: 0 10px; 
 }
 .topicLinks:hover {
   color: #ffffff;
   background-color: #212529;
   border-radius: 8px;
-  padding: 10px 15px; /* Adjusted padding for better click area */
+  padding: 10px 15px; 
   transition: all 0.3s ease-in-out 0ms;
 }
 .nav-arrow {

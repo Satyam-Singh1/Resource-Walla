@@ -2,6 +2,7 @@
 import React from 'react';
 import "./ContactUs.css"
 import Header2 from '../Header2';
+import Footer from '../Footer';
 export default function ContactUs() {
   return (
     <>
@@ -43,7 +44,7 @@ export default function ContactUs() {
           </form>
         </div>
 
-        {/* Contact Details */}
+ 
         <div className="detail">
             <div className="contact-us-details">
             <h2>Get in Touch</h2>
@@ -70,6 +71,7 @@ export default function ContactUs() {
         </div>    
       </div>
     </div>
+    <Footer/>
     </>
   );
 }
